@@ -1,0 +1,73 @@
+<% include partials/header.ejs  %>
+
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <% include partials/sidebar.ejs  %>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <% include partials/headertop.ejs  %>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Profile</h1>            
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="col-md-6">
+                
+
+                <form class="user" method="post" accept="/login">
+                    <div class="form-group">
+                            <input type="file" name="profile_image">
+                    </div>
+                    
+                    <input type="submit" value="Submit" class="btn btn-primary btn-user btn-block col-md-3">
+                    
+                  </form>
+
+            </div>
+            
+          </div>
+
+          
+
+          
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+<% include partials/footer.ejs  %>
